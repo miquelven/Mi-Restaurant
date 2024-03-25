@@ -13,6 +13,7 @@
 body {
   font-family: "Poppins", arial;
   background-color: #f5f3f4;
+  /* overflow-x: hidden; */
 }
 
 h2 {
@@ -35,5 +36,11 @@ h3 {
 @media screen and (max-width: 640px) {
   h3 {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h3 {
+    font-size: 32px;
   }
 }

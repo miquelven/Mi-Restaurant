@@ -24,20 +24,20 @@ const data = [
   },
 ];
 
-export default function Banner() {
-  const themeCarousel = {
-    indicators: {
-      active: {
-        off: "bg-white/20 hover:bg-white ",
-        on: "bg-white",
-      },
+const themeCarousel = {
+  indicators: {
+    active: {
+      off: "bg-white/20 hover:bg-white ",
+      on: "bg-white",
     },
-    control: {
-      base: "inline-flex h-8 w-8 items-center justify-center rounded-full hover:bg-white/20 sm:h-10 sm:w-10",
-      icon: "h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6",
-    },
-  };
+  },
+  control: {
+    base: " inline-flex h-8 w-8 items-center justify-center rounded-full hover:bg-white/20 sm:h-10 sm:w-10",
+    icon: "h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6",
+  },
+};
 
+export default function Banner() {
   return (
     <section className="text-white h-screen w-full ">
       <Carousel slideInterval={5000} theme={themeCarousel}>

@@ -2,7 +2,7 @@ import Container from "../Container";
 
 export default function About() {
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-20 overflow-hidden mt-80">
       <Container>
         <div className="relative z-20 pb-20 max-[420px]:pb-14">
           <h3 className="mb-16 mt-5 max-[420px]:mt-0 max-[420px]:mb-10">
@@ -29,7 +29,7 @@ export default function About() {
       <img
         src="/public/images/about.png"
         alt=""
-        className="absolute left-0 top-0 w-full h-full  object-cover opacity-40"
+        className="absolute left-0 top-0 w-full h-full  object-cover opacity-30"
       />
     </section>
   );
