@@ -14,3 +14,8 @@ body {
   font-family: "Poppins", arial;
   background-color: #f5f3f4;
 }
+
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
