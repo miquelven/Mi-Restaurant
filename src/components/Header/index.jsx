@@ -14,7 +14,7 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className="absolute w-full z-30 text-[#D3D3D3]">
+    <header className="absolute w-full z-30 text-[#a3a3a3]">
       <Container>
         <div className="flex justify-between items-center py-4 mb-10 font-medium text-sm max-md:text-xs max-sm:mb-4 max-[420px]:mb-7 max-[420px]:hidden">
           <div className="flex items-center gap-20 max-md:justify-between max-md:w-full">
@@ -68,7 +68,7 @@ export default function Header() {
               >
                 <a
                   href="#about"
-                  className="w-full flex justify-center uppercase py-1 border-b-4 font-semibold border-transparent transition-all duration-500 sm:hover:border-[#BA181B]"
+                  className="w-full flex justify-center uppercase py-1 border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
                 >
                   <span>sobre nós</span>
                 </a>
@@ -83,7 +83,7 @@ export default function Header() {
               >
                 <a
                   href="#products"
-                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold border-transparent transition-all duration-500 sm:hover:border-[#BA181B]"
+                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
                 >
                   <span>produtos</span>
                 </a>
@@ -98,7 +98,7 @@ export default function Header() {
               >
                 <a
                   href="#reviews"
-                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold border-transparent transition-all duration-500 sm:hover:border-[#BA181B]"
+                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
                 >
                   <span>avaliações</span>
                 </a>
@@ -113,7 +113,7 @@ export default function Header() {
               >
                 <a
                   href="#contact"
-                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold  border-transparent transition-all duration-500 sm:hover:border-[#BA181B]"
+                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold  border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
                 >
                   <span>contato</span>
                 </a>
