@@ -16,6 +16,19 @@ body {
   background-color: #f5f3f4;
 }
 
+html ::-webkit-scrollbar {
+  width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #161a1dbd;
+  border-radius: 15px;
+}
+
+html ::-webkit-scrollbar-track {
+  background-color: #f5f3f4;
+}
+
 h2 {
   font-weight: 600;
   font-size: 3rem;
