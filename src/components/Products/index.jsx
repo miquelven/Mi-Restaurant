@@ -10,7 +10,15 @@ export default function Products() {
           restaurante.
         </p>
       </div>
+
       <ProductSlider />
+      <div className="flex justify-center">
+        <img
+          src="/public/gif/productGif.gif"
+          alt="texto alt"
+          className="brightness-150"
+        />
+      </div>
     </section>
   );
 }
