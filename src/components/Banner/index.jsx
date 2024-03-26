@@ -46,7 +46,7 @@ export default function Banner() {
             <div className={`h-full w-full `} key={index}>
               <img
                 src={d.img}
-                alt=""
+                alt="imagens do restaurante"
                 className="w-full h-screen object-cover max-[420px]:object-bottom"
               />
               <div className="absolute inset-0 bg-black opacity-70 z-10"></div>

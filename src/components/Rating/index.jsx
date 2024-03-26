@@ -95,7 +95,7 @@ export default function Rating() {
                             <div className="flex items-center pl-10 max-md:pl-0">
                               <img
                                 src={people.img}
-                                alt="texto alt"
+                                alt="imagem de uma pessoa que fez uma avalização"
                                 className="w-20 h-20 rounded-full object-cover object-center max-2xl:w-16 max-2xl:h-16 max-lg:w-12 max-lg:h-12 max-[420px]:w-8 max-[420px]:h-8"
                               />
                               <span className="text-2xl  text-semibold ml-16 text-center text-black max-2xl:text-xl max-lg:text-lg max-[420px]:text-base">
@@ -115,7 +115,7 @@ export default function Rating() {
           <div className="ml-96  max-2xl:ml-28 max-xl:ml-0 max-lg:hidden">
             <img
               src="/public/images/rating.png"
-              alt="texto alt"
+              alt="imagem de um cozinheiro"
               className="absolute right-4 top-0 h-[700px] w-[500px] object-cover object-center z-20 max-2xl:h-[600px] max-2xl:w-[400px]"
             />
             <div className="absolute -right-1 top-5 h-[620px] w-[500px] bg-white z-10 max-2xl:h-[420px] max-2xl:w-[400px]"></div>

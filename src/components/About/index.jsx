@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <div className="flex justify-center items-end my-20">
-        <img src="/public/gif/aboutGif.gif" alt="text alt" />
+        <img src="/public/gif/aboutGif.gif" alt="gif de talheres" />
       </div>
 
       <section className="relative py-20 overflow-hidden" id="about">
@@ -35,7 +35,7 @@ export default function About() {
         </Container>
         <img
           src="/public/images/about.png"
-          alt=""
+          alt="imagem de fundo da seção de sobre"
           className="absolute left-0 top-0 w-full h-full  object-cover opacity-30"
         />
       </section>
