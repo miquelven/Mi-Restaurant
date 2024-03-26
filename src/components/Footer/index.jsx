@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="relative bg-[url('/public/images/footer.png')] opacity-80 w-full py-4 h-[200px] flex flex-col justify-between items-center max-md:h-[170px] max-[420px]:h-[230px]">
       <div className="flex justify-center items-center flex-col gap-3">
         <h5 className="text-[#F5F3F4] text-2xl max-md:text-lg">
-          Nome do Restaurante
+          Mi Restaurante
         </h5>
         <p className="text-[#D3D3D3] max-md:text-sm">Horário: 09:00 - 13:00</p>
       </div>

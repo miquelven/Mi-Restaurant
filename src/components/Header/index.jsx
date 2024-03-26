@@ -25,13 +25,15 @@ export default function Header() {
 
             <div className="flex items-center max-[420px]:hidden">
               <UilEnvelope />
-              <span className="ml-4">contato@restaurante.com</span>
+              <span className="ml-4">contato@mirestaurante.com</span>
             </div>
           </div>
 
           <div className="flex items-center max-md:hidden">
             <UilMapMarker />
-            <span className="ml-4">Rua nº, bairro, cidade</span>
+            <span className="ml-4">
+              Rua das Estrelas, Jardim do Luar, Solaris
+            </span>
           </div>
         </div>
 
