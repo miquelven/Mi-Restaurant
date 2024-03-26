@@ -97,7 +97,7 @@ export default function Header() {
                 }`}
               >
                 <a
-                  href="#reviews"
+                  href="#rating"
                   className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
                 >
                   <span>avaliações</span>

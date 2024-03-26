@@ -8,12 +8,12 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", arial;
   background-color: #f5f3f4;
-  /* overflow-x: hidden; */
 }
 
 h2 {

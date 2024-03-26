@@ -5,7 +5,10 @@ export default function Contact() {
     <section className="mb-96 max-lg:mb-60">
       <Container>
         <div className="flex">
-          <div className="flex flex-col justify-between flex-1 h-[650px] mt-60 max-2xl:h-[610px] max-xl:h-[510px] max-xl:mt-10 max-lg:h-[410px] max-lg:mt-0 max-md:h-[500px] max-[420px]:h-[520px]">
+          <div
+            className="flex flex-col justify-between flex-1 h-[650px] mt-60 max-2xl:h-[610px] max-xl:h-[510px] max-xl:mt-10 max-lg:h-[410px] max-lg:mt-0 max-md:h-[500px] max-[420px]:h-[520px]"
+            id="contact"
+          >
             <div className="flex items-center justify-center gap-20 max-lg:justify-start max-md:gap-10">
               <span className="capitalize text-[rgb(186,24,27)] text-2xl font-medium max-2xl:text-xl max-xl:text-base max-[420px]:text-sm">
                 estamos te esperando
