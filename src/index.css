@@ -14,8 +14,7 @@
 body {
   font-family: "Poppins", arial;
   background-color: #f5f3f4;
-
-  position: relative;
+  overflow-x: hidden;
 }
 
 html ::-webkit-scrollbar {

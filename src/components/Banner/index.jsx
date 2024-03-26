@@ -39,7 +39,7 @@ const themeCarousel = {
 
 export default function Banner() {
   return (
-    <section className="text-white h-screen w-full ">
+    <section className="text-white h-screen w-full bg-red-400">
       <Carousel slideInterval={5000} theme={themeCarousel}>
         {data.map((d, index) => (
           <>

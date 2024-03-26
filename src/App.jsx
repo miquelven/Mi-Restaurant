@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="relative">
+      <main className="relative w-[100vw]">
         <Banner />
         <About />
         <Products />
