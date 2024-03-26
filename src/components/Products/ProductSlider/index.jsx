@@ -35,8 +35,8 @@ export default function ProductSlider() {
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
           initial={{ x: 300 }}
-          whileInView={{ x: 0 }}
-          once={false}
+          animate={{ x: 0 }}
+          once={true}
           transition={{ duration: 1.5 }}
         >
           {data.imgs.map((img, imgIndex) => (
