@@ -112,7 +112,7 @@ export default function Rating() {
             </Carousel>
           </div>
 
-          <div className="ml-96 max-2xl:ml-28 max-xl:ml-0 max-lg:hidden">
+          <div className="ml-96  max-2xl:ml-28 max-xl:ml-0 max-lg:hidden">
             <img
               src="/public/images/rating.png"
               alt="texto alt"
