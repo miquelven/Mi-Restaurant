@@ -1,4 +1,5 @@
 import ProductSlider from "./ProductSlider";
+import gif from "/public/gif/productGif.gif";
 
 export default function Products() {
   return (
@@ -16,11 +17,7 @@ export default function Products() {
 
       <ProductSlider />
       <div className="flex justify-center">
-        <img
-          src="/public/gif/productGif.gif"
-          alt="texto alt"
-          className="brightness-150"
-        />
+        <img src={gif} alt="texto alt" className="brightness-150" />
       </div>
     </section>
   );

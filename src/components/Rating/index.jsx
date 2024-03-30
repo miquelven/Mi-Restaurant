@@ -1,17 +1,20 @@
 import { Carousel } from "flowbite-react";
 import Container from "../Container";
 
+import ratingImg from "/public/images/rating.webp";
+import peopleImg from "/public/images/people.webp";
+
 const data = [
   {
     peoples: [
       {
         name: "Lucas Silva",
-        img: "/public/images/people.png",
+        img: peopleImg,
         text: "Uma experiência gastronômica incrível! Equipe atenciosa, ambiente acolhedor e pratos deliciosos. Recomendo!",
       },
       {
         name: "Lucas Silva",
-        img: "/public/images/people.png",
+        img: peopleImg,
         text: "Uma experiência gastronômica incrível! Equipe atenciosa, ambiente acolhedor e pratos deliciosos. Recomendo!",
       },
     ],
@@ -21,12 +24,12 @@ const data = [
     peoples: [
       {
         name: "Lucas Silva",
-        img: "/public/images/people.png",
+        img: peopleImg,
         text: "Uma experiência gastronômica incrível! Equipe atenciosa, ambiente acolhedor e pratos deliciosos. Recomendo!",
       },
       {
         name: "Lucas Silva",
-        img: "/public/images/people.png",
+        img: peopleImg,
         text: "Uma experiência gastronômica incrível! Equipe atenciosa, ambiente acolhedor e pratos deliciosos. Recomendo!",
       },
     ],
@@ -35,12 +38,12 @@ const data = [
     peoples: [
       {
         name: "Lucas Silva",
-        img: "/public/images/people.png",
+        img: peopleImg,
         text: "Uma experiência gastronômica incrível! Equipe atenciosa, ambiente acolhedor e pratos deliciosos. Recomendo!",
       },
       {
         name: "Lucas Silva",
-        img: "/public/images/people.png",
+        img: peopleImg,
         text: "Uma experiência gastronômica incrível! Equipe atenciosa, ambiente acolhedor e pratos deliciosos. Recomendo!",
       },
     ],
@@ -114,7 +117,7 @@ export default function Rating() {
 
           <div className="ml-96  max-2xl:ml-28 max-xl:ml-0 max-lg:hidden">
             <img
-              src="/public/images/rating.png"
+              src={ratingImg}
               alt="imagem de um cozinheiro"
               className="absolute right-4 top-0 h-[700px] w-[500px] object-cover object-center z-20 max-2xl:h-[600px] max-2xl:w-[400px]"
             />

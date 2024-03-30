@@ -1,9 +1,14 @@
 import { UilInstagram } from "@iconscout/react-unicons";
 import { UilFacebook } from "@iconscout/react-unicons";
 
+import bgFooter from "/public/images/footer.webp";
+
 export default function Footer() {
   return (
-    <footer className="relative bg-[url('/public/images/footer.png')] opacity-80 w-full py-4 h-[200px] flex flex-col justify-between items-center max-md:h-[170px] max-[420px]:h-[230px]">
+    <footer
+      className="relative opacity-80 w-full py-4 h-[200px] flex flex-col justify-between items-center max-md:h-[170px] max-[420px]:h-[230px]"
+      style={{ backgroundImage: `url('${bgFooter}')` }}
+    >
       <div className="flex justify-center items-center flex-col gap-3">
         <h5 className="text-[#F5F3F4] text-2xl max-md:text-lg">
           Mi Restaurante

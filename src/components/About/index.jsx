@@ -1,4 +1,6 @@
 import Container from "../Container";
+import gif from "/public/gif/aboutGif.gif";
+import bgAbout from "/public/images/about.webp";
 
 export default function About() {
   const texts = [
@@ -9,7 +11,7 @@ export default function About() {
   return (
     <>
       <div className="flex justify-center  items-end my-20">
-        <img src="/public/gif/aboutGif.gif" alt="gif de talheres" />
+        <img src={gif} alt="gif de talheres" />
       </div>
 
       <section className="relative py-20  overflow-hidden " id="about">
@@ -33,7 +35,7 @@ export default function About() {
           </div>
         </Container>
         <img
-          src="/public/images/about.png"
+          src={bgAbout}
           alt="imagem de fundo da seção de sobre"
           className="absolute left-0 top-0 w-full h-full  object-cover opacity-30"
         />

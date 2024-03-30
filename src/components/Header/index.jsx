@@ -9,6 +9,8 @@ import OutsideClickHandler from "react-outside-click-handler";
 import Container from "../Container";
 import Links from "./Links";
 
+import logo from "/public/images/logo.webp";
+
 import { useRef, useState } from "react";
 
 export default function Header() {
@@ -46,7 +48,7 @@ export default function Header() {
           <nav className="relative flex justify-between items-center max-md:text-sm max-sm:absolute max-sm:right-0 max-sm:left-0 max-sm:px-5">
             <a href="#">
               <img
-                src="/public/images/logo.png"
+                src={logo}
                 alt="Logo do restaurante"
                 className="w-24 max-md:w-16 max-sm:mt-3 max-[420px]:w-10"
               />

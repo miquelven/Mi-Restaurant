@@ -2,16 +2,25 @@ import { useEffect, useRef, useState } from "react";
 import Container from "../../Container";
 import { motion } from "framer-motion";
 
+import product1 from "/public/images/productsImg/product1.webp";
+import product2 from "/public/images/productsImg/product2.webp";
+import product3 from "/public/images/productsImg/product3.webp";
+import product4 from "/public/images/productsImg/product4.webp";
+import product5 from "/public/images/productsImg/product5.webp";
+import product6 from "/public/images/productsImg/product6.webp";
+import product7 from "/public/images/productsImg/product7.webp";
+import product8 from "/public/images/productsImg/product8.webp";
+
 const data = {
   imgs: [
-    "/public/images/productsImg/product1.png",
-    "/public/images/productsImg/product2.png",
-    "/public/images/productsImg/product3.png",
-    "/public/images/productsImg/product4.png",
-    "/public/images/productsImg/product5.jpg",
-    "/public/images/productsImg/product6.png",
-    "/public/images/productsImg/product7.png",
-    "/public/images/productsImg/product8.png",
+    product1,
+    product2,
+    product3,
+    product4,
+    product5,
+    product6,
+    product7,
+    product8,
   ],
 };
 

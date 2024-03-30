@@ -1,7 +1,7 @@
 import { Carousel } from "flowbite-react";
-import banner from "/public/images/banner.jpg";
-import waiter from "/public/images/waiter.png";
-import chefstable from "/public/images/chefstable.png";
+import banner from "/public/images/banner.webp";
+import waiter from "/public/images/waiter.webp";
+import chefstable from "/public/images/chefstable.webp";
 
 const data = [
   {
