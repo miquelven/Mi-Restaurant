@@ -29,7 +29,7 @@ export default function Links({ setOpenMenu, openMenu }) {
         <li
           key={d.id}
           onClick={() => setOpenMenu(false)}
-          className={`py-4 ${
+          className={`${
             openMenu
               ? "hover:bg-white/10 w-full h-full  flex justify-center"
               : ""
@@ -37,7 +37,7 @@ export default function Links({ setOpenMenu, openMenu }) {
         >
           <a
             href={d.href}
-            className="w-full flex justify-center uppercase py-1 border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
+            className="w-full py-4 flex justify-center uppercase border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
           >
             <span>{d.label}</span>
           </a>

@@ -4,6 +4,8 @@ import Container from "../Container";
 import ratingImg from "/public/images/rating.webp";
 import peopleImg from "/public/images/people.webp";
 
+import { motion } from "framer-motion";
+
 const data = [
   {
     peoples: [
@@ -59,10 +61,30 @@ const themeCarousel = {
   },
 };
 
+const cardVariant = {
+  offscreen: {
+    x: -800,
+  },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 2.5,
+    },
+  },
+};
+
 export default function Rating() {
   return (
     <Container>
-      <section className="mb-96 scroll-mt-20 max-sm:scroll-mt-10" id="rating">
+      <motion.section
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        className="mb-96 scroll-mt-20 max-sm:scroll-mt-10"
+        id="rating"
+      >
         <span className="font-medium text-[#333533] max-md:text-sm">
           Avaliações
         </span>
@@ -71,7 +93,10 @@ export default function Rating() {
         </h3>
 
         <div className="relative flex justify-end max-lg:flex-col ">
-          <div className="max-w-[1050px] flex relative z-30 max-md:h-[680px]">
+          <motion.div
+            variants={cardVariant}
+            className="max-w-[1050px] flex relative z-30 max-md:h-[680px]"
+          >
             <Carousel
               slideInterval={5000}
               theme={themeCarousel}
@@ -113,18 +138,28 @@ export default function Rating() {
                 </>
               ))}
             </Carousel>
-          </div>
+          </motion.div>
 
-          <div className="ml-96  max-2xl:ml-28 max-xl:ml-0 max-lg:hidden">
-            <img
+          <motion.div
+            initial={{ opacity: 0, y: 400 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="ml-96  max-2xl:ml-28 max-xl:ml-0 max-lg:hidden"
+          >
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.4 }}
+              viewport={{ once: true }}
               src={ratingImg}
               alt="imagem de um cozinheiro"
               className="absolute right-4 top-0 h-[700px] w-[500px] object-cover object-center z-20 max-2xl:h-[600px] max-2xl:w-[400px]"
             />
             <div className="absolute -right-1 top-5 h-[620px] w-[500px] bg-white z-10 max-2xl:h-[420px] max-2xl:w-[400px]"></div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
     </Container>
   );
 }

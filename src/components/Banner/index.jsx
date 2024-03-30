@@ -3,6 +3,8 @@ import banner from "/public/images/banner.webp";
 import waiter from "/public/images/waiter.webp";
 import chefstable from "/public/images/chefstable.webp";
 
+import { motion } from "framer-motion";
+
 const data = [
   {
     img: banner,
@@ -52,14 +54,20 @@ export default function Banner() {
               className="w-full h-screen object-cover max-[420px]:object-bottom"
             />
             <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
-            <div className="absolute z-20 inset-0 flex justify-center items-center flex-col max-sm:px-5">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.8 }}
+              viewport={{ once: true }}
+              className="absolute z-20 inset-0 flex justify-center items-center flex-col max-sm:px-5"
+            >
               <h2 className="text-[#e5e3e4] text-center mt-20 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl ">
                 {d.content.h2}
               </h2>
               <p className="my-14 text-xl font-medium text-[#b0b0b0] max-w-[500px] text-center leading-[40px] max-lg:text-lg max-md:text-base max-[420px]:mt-40">
                 {d.content.p}
               </p>
-            </div>
+            </motion.div>
           </div>
         ))}
       </Carousel>

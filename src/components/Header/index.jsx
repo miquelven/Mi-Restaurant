@@ -9,6 +9,8 @@ import OutsideClickHandler from "react-outside-click-handler";
 import Container from "../Container";
 import Links from "./Links";
 
+import { motion } from "framer-motion";
+
 import logo from "/public/images/logo.webp";
 
 import { useRef, useState } from "react";
@@ -18,7 +20,13 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className="absolute w-full z-30 text-[#a3a3a3]">
+    <motion.header
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.4 }}
+      viewport={{ once: true }}
+      className="absolute w-full z-30 text-[#a3a3a3]"
+    >
       <Container>
         <div className="flex justify-between items-center py-4 mb-10 font-medium text-sm max-md:text-xs max-sm:mb-4 max-[420px]:mb-7 max-[420px]:hidden">
           <div className="flex items-center gap-20 max-md:justify-between max-md:w-full">
@@ -45,7 +53,12 @@ export default function Header() {
         <div className="absolute w-full left-0 top-16 bg-[#CCCCCC] opacity-30 h-0.5"></div>
 
         <OutsideClickHandler onOutsideClick={() => setOpenMenu(false)}>
-          <nav className="relative flex justify-between items-center max-md:text-sm max-sm:absolute max-sm:right-0 max-sm:left-0 max-sm:px-5">
+          <motion.nav
+            initial={{ marginBottom: "-100%" }}
+            animate={{ marginBottom: 0 }}
+            transition={{ duration: 0.5 }}
+            className="relative flex justify-between items-center max-md:text-sm max-sm:absolute max-sm:right-0 max-sm:left-0 max-sm:px-5"
+          >
             <a href="#">
               <img
                 src={logo}
@@ -82,9 +95,9 @@ export default function Header() {
                 <UilTimes size="32" />
               </button>
             )}
-          </nav>
+          </motion.nav>
         </OutsideClickHandler>
       </Container>
-    </header>
+    </motion.header>
   );
 }
