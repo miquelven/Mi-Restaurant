@@ -59,7 +59,7 @@ const themeCarousel = {
 export default function Rating() {
   return (
     <Container>
-      <section className="mb-96" id="rating">
+      <section className="mb-96 scroll-mt-20" id="rating">
         <span className="font-medium text-[#333533] max-md:text-sm">
           Avaliações
         </span>

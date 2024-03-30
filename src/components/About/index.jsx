@@ -3,18 +3,18 @@ import Container from "../Container";
 export default function About() {
   return (
     <>
-      <div className="flex justify-center items-end my-20">
+      <div className="flex justify-center  items-end my-20">
         <img src="/public/gif/aboutGif.gif" alt="gif de talheres" />
       </div>
 
-      <section className="relative py-20 overflow-hidden" id="about">
+      <section className="relative py-20  overflow-hidden " id="about">
         <Container>
-          <div className="relative z-20 pb-20 max-[420px]:pb-14">
+          <div className="relative z-20  pb-20 max-[420px]:pb-14">
             <h3 className="mb-16 mt-5 max-[420px]:mt-0 max-[420px]:mb-10">
               Mi Restaurante
             </h3>
 
-            <div className="grid grid-cols-2 gap-56 max-xl:gap-32 max-lg:grid-cols-1 max-lg:gap-14 max-md:gap-10">
+            <div className="grid grid-cols-2  gap-56 max-xl:gap-32 max-lg:grid-cols-1 max-lg:gap-14 max-md:gap-10">
               <p className="text-lg leading-10 text-[#33533] max-lg:text-base max-lg:leading-8 max-sm:text-sm max-sm:leading-6">
                 Nosso restaurante é um espaço onde os sabores se encontram para
                 criar momentos inesquecíveis. Com uma equipe dedicada e uma
