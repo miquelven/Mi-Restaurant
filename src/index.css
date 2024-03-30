@@ -41,6 +41,10 @@ h3 {
   color: #161a1d;
 }
 
+#carousel div {
+  border-radius: 0;
+}
+
 @media screen and (max-width: 1024px) {
   h3 {
     font-size: 2.75rem;
