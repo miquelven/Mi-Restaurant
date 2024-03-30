@@ -46,11 +46,11 @@ function App() {
         {/* toUp */}
         <button
           onClick={scrollTop}
-          className={`transition-all duration-300 fixed z-50 bottom-10 right-10 p-1 text-gray-600 rounded-full hover:bg-gray-600 hover:text-white ${
+          className={`transition-all duration-300 fixed z-50 bottom-10 right-10 text-gray-600 rounded-full hover:bg-gray-600 hover:text-white max-sm:right-5 ${
             showScroll ? "block" : "hidden"
           }`}
         >
-          <UilArrowCircleUp className="w-11 h-11 " />
+          <UilArrowCircleUp className="w-11 h-11 max-sm:w-8 max-sm:h-8" />
         </button>
       </main>
       <Footer />

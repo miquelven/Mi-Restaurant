@@ -7,6 +7,8 @@ import { UilTimes } from "@iconscout/react-unicons";
 import OutsideClickHandler from "react-outside-click-handler";
 
 import Container from "../Container";
+import Links from "./Links";
+
 import { useRef, useState } from "react";
 
 export default function Header() {
@@ -60,66 +62,7 @@ export default function Header() {
              }
             `}
             >
-              <li
-                onClick={() => setOpenMenu(false)}
-                className={`py-4 ${
-                  openMenu
-                    ? "hover:bg-white/10 w-full h-full  flex justify-center"
-                    : ""
-                }`}
-              >
-                <a
-                  href="#about"
-                  className="w-full flex justify-center uppercase py-1 border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
-                >
-                  <span>sobre nós</span>
-                </a>
-              </li>
-              <li
-                onClick={() => setOpenMenu(false)}
-                className={`py-4 ${
-                  openMenu
-                    ? "hover:bg-white/10 w-full h-full  flex justify-center"
-                    : ""
-                }`}
-              >
-                <a
-                  href="#products"
-                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
-                >
-                  <span>produtos</span>
-                </a>
-              </li>
-              <li
-                onClick={() => setOpenMenu(false)}
-                className={`py-4 ${
-                  openMenu
-                    ? "hover:bg-white/10 w-full h-full flex justify-center"
-                    : ""
-                }`}
-              >
-                <a
-                  href="#rating"
-                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
-                >
-                  <span>avaliações</span>
-                </a>
-              </li>
-              <li
-                onClick={() => setOpenMenu(false)}
-                className={`py-4 ${
-                  openMenu
-                    ? "hover:bg-white/10 w-full h-full flex justify-center"
-                    : ""
-                }`}
-              >
-                <a
-                  href="#contact"
-                  className="uppercase w-full flex justify-center py-1 border-b-4 font-semibold  border-transparent transition-all duration-500 hover:text-[#d3d3d3] sm:hover:border-[#BA181B]"
-                >
-                  <span>contato</span>
-                </a>
-              </li>
+              <Links openMenu={openMenu} setOpenMenu={setOpenMenu} />
             </ul>
 
             {!openMenu ? (

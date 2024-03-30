@@ -1,22 +1,25 @@
 import { Carousel } from "flowbite-react";
+import banner from "/public/images/banner.jpg";
+import waiter from "/public/images/waiter.png";
+import chefstable from "/public/images/chefstable.png";
 
 const data = [
   {
-    img: "/public/images/banner.jpg",
+    img: banner,
     content: {
       h2: "Um lugar aconchegante para se estar",
       p: "Você terá a sensação de estar em sua casa. Venha experimentar!",
     },
   },
   {
-    img: "/public/images/waiter.png",
+    img: waiter,
     content: {
       h2: "Hospitalidade calorosa e atenciosa",
       p: "Nossa equipe dedicada está sempre pronta para recebê-lo com um sorriso caloroso e proporcionar uma experiência verdadeiramente memorável.",
     },
   },
   {
-    img: "/public/images/chefstable.png",
+    img: chefstable,
     content: {
       h2: "Uma experiência gastronômica única",
       p: "Deixe-nos surpreendê-lo com uma experiência gastronômica que desperte todos os seus sentidos.",

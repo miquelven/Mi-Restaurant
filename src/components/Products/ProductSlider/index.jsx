@@ -42,7 +42,7 @@ export default function ProductSlider() {
           {data.imgs.map((img, imgIndex) => (
             <div
               key={imgIndex}
-              className="h-[400px] min-w-[600px] max-sm:w-full max-sm:max-w-[600px] max-sm:min-w-[324px]"
+              className="h-[400px] min-w-[600px] max-sm:w-full max-sm:max-w-[600px] max-sm:min-w-[224px] max-sm:h-[300px]"
             >
               <img
                 src={img}

@@ -1,6 +1,11 @@
 import Container from "../Container";
 
 export default function About() {
+  const texts = [
+    "Nosso restaurante é um espaço onde os sabores se encontram para    criar momentos inesquecíveis. Com uma equipe dedicada e uma    cozinha que exala criatividade, cada prato é uma obra de arte    culinária.",
+    "Somos apaixonados por comida e por proporcionar experiências    gastronômicas memoráveis. No coração de nossa cozinha, buscamos    ingredientes frescos e sazonais, combinando técnicas    tradicionais com uma abordagem criativa. Nosso objetivo é    oferecer pratos que não apenas alimentem o corpo, mas também    alimentem a alma.",
+  ];
+
   return (
     <>
       <div className="flex justify-center  items-end my-20">
@@ -15,20 +20,14 @@ export default function About() {
             </h3>
 
             <div className="grid grid-cols-2  gap-56 max-xl:gap-32 max-lg:grid-cols-1 max-lg:gap-14 max-md:gap-10">
-              <p className="text-lg leading-10 text-[#33533] max-lg:text-base max-lg:leading-8 max-sm:text-sm max-sm:leading-6">
-                Nosso restaurante é um espaço onde os sabores se encontram para
-                criar momentos inesquecíveis. Com uma equipe dedicada e uma
-                cozinha que exala criatividade, cada prato é uma obra de arte
-                culinária.
-              </p>
-              <p className="text-lg leading-10 text-[#33533] max-lg:text-base max-lg:leading-8 max-sm:text-sm max-sm:leading-6">
-                Somos apaixonados por comida e por proporcionar experiências
-                gastronômicas memoráveis. No coração de nossa cozinha, buscamos
-                ingredientes frescos e sazonais, combinando técnicas
-                tradicionais com uma abordagem criativa. Nosso objetivo é
-                oferecer pratos que não apenas alimentem o corpo, mas também
-                alimentem a alma.
-              </p>
+              {texts.map((text, index) => (
+                <p
+                  key={index}
+                  className="text-lg leading-10 text-[#33533] max-lg:text-base max-lg:leading-8 max-sm:text-xs max-sm:leading-6"
+                >
+                  {text}
+                </p>
+              ))}
             </div>
             <div className="bg-[#BA181B] h-2 rounded-sm w-32 absolute bottom-0 left-0 max-[420px]:h-1"></div>
           </div>
