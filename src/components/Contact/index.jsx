@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <motion.section className="mb-96  max-lg:mb-60">
+    <motion.section className="mb-44  max-lg:mb-60">
       <Container>
         <div className="flex">
           <motion.div
-            initial={{ opacity: 0, y: 400 }}
+            initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: true }}
-            className="flex flex-col justify-between flex-1 h-[650px] scroll-mt-20 mt-60 max-2xl:h-[610px] max-xl:h-[510px] max-xl:mt-10 max-lg:h-[410px] max-lg:mt-0 max-md:h-[500px] max-[420px]:h-[520px]"
+            className="flex flex-col justify-between flex-1 h-[650px] scroll-mt-20 mt-60 max-2xl:h-[610px] max-xl:h-[510px] max-xl:mt-10 max-lg:h-[410px] max-lg:mt-0 max-md:h-[500px] max-[420px]:h-[520px] max-sm:scroll-mt-32"
             id="contact"
           >
             <div className=" flex items-center justify-center gap-20 max-lg:justify-start max-md:gap-10">

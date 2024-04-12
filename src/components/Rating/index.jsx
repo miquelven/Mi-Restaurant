@@ -88,7 +88,7 @@ export default function Rating() {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }}
-        className="mb-96 scroll-mt-20 max-sm:scroll-mt-10"
+        className="mb-40 max-sm:scroll-mt-10 sm:mb-96"
         id="rating"
       >
         <span className="font-medium text-[#333533] max-md:text-sm ">

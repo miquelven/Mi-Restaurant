@@ -23,7 +23,7 @@ export default function Products() {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true }}
-      className="my-96 relative scroll-mt-40 max-sm:my-52 max-sm:scroll-mt-24"
+      className="my-96 relative scroll-mt-40 max-sm:my-52 max-sm:scroll-mt-0"
       id="products"
     >
       <motion.div
