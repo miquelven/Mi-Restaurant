@@ -1,6 +1,8 @@
 import { Carousel } from "flowbite-react";
 import Container from "../Container";
 
+import "./style.css";
+
 import ratingImg from "/public/images/rating.webp";
 import peopleImg from "/public/images/people.webp";
 
@@ -59,6 +61,10 @@ const themeCarousel = {
       on: "bg-black",
     },
   },
+  control: {
+    base: "hidden ",
+    icon: "hidden ",
+  },
 };
 
 const cardVariant = {
@@ -85,10 +91,10 @@ export default function Rating() {
         className="mb-96 scroll-mt-20 max-sm:scroll-mt-10"
         id="rating"
       >
-        <span className="font-medium text-[#333533] max-md:text-sm">
+        <span className="font-medium text-[#333533] max-md:text-sm ">
           Avaliações
         </span>
-        <h3 className="max-sm:mt-10 max-sm:text-center">
+        <h3 className="max-sm:mt-5 max-sm:text-center">
           O que dizem sobre nós
         </h3>
 
@@ -97,19 +103,14 @@ export default function Rating() {
             variants={cardVariant}
             className="max-w-[1050px] flex relative z-30 max-md:h-[680px]"
           >
-            <Carousel
-              slideInterval={5000}
-              theme={themeCarousel}
-              leftControl=" "
-              rightControl=" "
-            >
+            <Carousel slideInterval={5000} theme={themeCarousel}>
               {data.map((d, index) => (
                 <>
                   <div
                     key={index}
-                    className="w-full mt-20 h-96 max-xl:mt-40 max-lg:mt-20 max-lg:h-80 "
+                    className="w-full mt-20 h-96 max-xl:mt-40 max-lg:mt-20 max-lg:h-80 max-sm:h-60"
                   >
-                    <div className="flex gap-5 max-xl:justify-center max-md:flex-col max-md:gap-14">
+                    <div className="flex gap-2 max-xl:justify-center max-md:flex-col max-md:gap-14">
                       {d.peoples.map((people, peopleIndex) => (
                         <>
                           <div
