@@ -3,8 +3,8 @@ import Container from "../Container";
 
 import "./style.css";
 
-import ratingImg from "/public/images/rating.webp";
-import peopleImg from "/public/images/people.webp";
+import ratingImg from "../../assets/images/rating.webp";
+import peopleImg from "../../assets/images/people.webp";
 
 import { motion } from "framer-motion";
 

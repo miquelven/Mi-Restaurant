@@ -1,12 +1,12 @@
 import Container from "../Container";
-import smallContact from "/public/images/contactImg/smallContactImg.webp";
-import largeContact from "/public/images/contactImg/largeContactImg.webp";
+import smallContact from "../../assets/images/contactImg/smallContactImg.webp";
+import largeContact from "../../assets/images/contactImg/largeContactImg.webp";
 
 import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <motion.section className="mb-44  max-lg:mb-60">
+    <motion.section className="mb-96  max-lg:mb-60">
       <Container>
         <div className="flex">
           <motion.div

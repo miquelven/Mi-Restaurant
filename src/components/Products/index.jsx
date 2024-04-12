@@ -1,5 +1,5 @@
 import ProductSlider from "./ProductSlider";
-import gif from "/public/gif/productGif.gif";
+import gif from "../../assets/gif/productGif.gif";
 
 import { motion } from "framer-motion";
 

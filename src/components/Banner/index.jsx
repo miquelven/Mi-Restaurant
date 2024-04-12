@@ -1,7 +1,7 @@
 import { Carousel } from "flowbite-react";
-import banner from "/public/images/banner.webp";
-import waiter from "/public/images/waiter.webp";
-import chefstable from "/public/images/chefstable.webp";
+import banner from "../../assets/images/banner.webp";
+import waiter from "../../assets/images/waiter.webp";
+import chefstable from "../../assets/images/chefstable.webp";
 
 import { motion } from "framer-motion";
 

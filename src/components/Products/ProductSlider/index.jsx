@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import Container from "../../Container";
 import { motion } from "framer-motion";
 
-import product1 from "/public/images/productsImg/product1.webp";
-import product2 from "/public/images/productsImg/product2.webp";
-import product3 from "/public/images/productsImg/product3.webp";
-import product4 from "/public/images/productsImg/product4.webp";
-import product5 from "/public/images/productsImg/product5.webp";
-import product6 from "/public/images/productsImg/product6.webp";
-import product7 from "/public/images/productsImg/product7.webp";
-import product8 from "/public/images/productsImg/product8.webp";
+import product1 from "../../../assets/images/productsImg/product1.webp";
+import product2 from "../../../assets/images/productsImg/product2.webp";
+import product3 from "../../../assets/images/productsImg/product3.webp";
+import product4 from "../../../assets/images/productsImg/product4.webp";
+import product5 from "../../../assets/images/productsImg/product5.webp";
+import product6 from "../../../assets/images/productsImg/product6.webp";
+import product7 from "../../../assets/images/productsImg/product7.webp";
+import product8 from "../../../assets/images/productsImg/product8.webp";
 
 const data = {
   imgs: [

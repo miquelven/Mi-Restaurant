@@ -1,7 +1,7 @@
 import { UilInstagram } from "@iconscout/react-unicons";
 import { UilFacebook } from "@iconscout/react-unicons";
 
-import bgFooter from "/public/images/footer.webp";
+import bgFooter from "../../assets/images/footer.webp";
 
 export default function Footer() {
   return (

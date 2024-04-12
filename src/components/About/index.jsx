@@ -1,6 +1,6 @@
 import Container from "../Container";
-import gif from "/public/gif/aboutGif.gif";
-import bgAbout from "/public/images/about.webp";
+import gif from "../../assets/gif/aboutGif.gif";
+import bgAbout from "../../assets/images/about.webp";
 
 import { motion } from "framer-motion";
 

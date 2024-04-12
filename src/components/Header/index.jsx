@@ -11,7 +11,7 @@ import Links from "./Links";
 
 import { motion } from "framer-motion";
 
-import logo from "/public/images/logo.webp";
+import logo from "../../assets/images/logo.webp";
 
 import { useRef, useState } from "react";
 
