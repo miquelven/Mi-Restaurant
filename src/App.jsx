@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 
 import { useState, useEffect } from "react";
 import { UilArrowCircleUp } from "@iconscout/react-unicons";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -34,6 +35,20 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>MiRestaurante</title>
+
+        <meta
+          name="description"
+          content="Desfrute de uma experiência culinária excepcional em nosso restaurante. Explore uma variedade de pratos autênticos e saboreie a atmosfera acolhedora do nosso local. Confira nossas avaliações e reserve sua mesa hoje mesmo."
+        />
+        <meta
+          name="keywords"
+          content="Restaurante, comida, gastronomia, menu, culinária, localização, reservas, chef, avaliações, ambiente, cardápio, especialidades."
+        />
+        <meta name="author" content="MiRestaurante" />
+      </Helmet>
+
       <Header />
       <main className="relative w-[100vw]">
         <Banner />
