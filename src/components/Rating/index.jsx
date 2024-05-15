@@ -62,8 +62,8 @@ const themeCarousel = {
     },
   },
   control: {
-    base: "hidden ",
-    icon: "hidden ",
+    base: "text-black/70 text-4xl ",
+    icon: "bg-[#f5f3f4] rounded-full max-sm:absolute max-sm:bottom-10 max-sm:left-0 max-sm:bg-[#DEDEDF]",
   },
 };
 
@@ -115,7 +115,7 @@ export default function Rating() {
                         <>
                           <div
                             className="flex flex-col justify-center gap-5 max-md:items-center"
-                            key={peopleIndex}
+                            key={peopleIndex + index}
                           >
                             <div className="w-[500px] h-[225px] rounded-xl bg-[#DEDEDF] flex text-center text-[#333] items-center font-light text-xl leading-9 max-2xl:w-[400px] max-2xl:h-[175px] max-2xl:text-lg max-lg:text-sm max-lg:leading-7 max-lg:w-[350px] max-lg:h-[150px] max-[420px]:w-[300px] max-[420px]:text-xs max-[420px]:leading-6 max-[420px]:px-5">
                               {people.text}
