@@ -24,7 +24,7 @@ export default function About() {
       >
         <Container>
           <div className="relative z-20  pb-20 max-[420px]:pb-14">
-            <motion.h3
+            <motion.h2
               initial={{ y: 400 }}
               whileInView={{ y: 0 }}
               viewport={{ once: true }}
@@ -32,7 +32,7 @@ export default function About() {
               className="mb-16 mt-5 max-[420px]:mt-0 max-[420px]:mb-10"
             >
               Mi Restaurante
-            </motion.h3>
+            </motion.h2>
 
             <motion.div
               initial={{ y: 400 }}
