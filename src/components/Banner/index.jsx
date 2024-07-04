@@ -52,6 +52,7 @@ export default function Banner() {
               src={d.img}
               alt="imagens do restaurante"
               className="w-full h-screen object-cover max-[420px]:object-bottom"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
             <motion.div
